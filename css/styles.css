@@ -1,1 +1,71 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+}
+
+body ul {
+  list-style-type: none;
+}
+
+body {
+  background-color: #0c122c;
+}
+
+#bg {
+  position: fixed;
+  background-image: url("../../assets/images/bg-desktop.svg");
+  top: 50%;
+  height: 50%;
+  width: 100%;
+  bottom: 0;
+  background-size: cover;
+  z-index: -1;
+  background-repeat: no-repeat;
+}
+
+#bg::after {
+  content: "";
+  background-color: #0c122c;
+  position: absolute;
+  width: 17rem;
+  height: 18rem;
+  top: -1rem;
+  z-index: -1;
+  border-bottom-right-radius: 100%;
+}
+
+#bg::before {
+  content: "";
+  position: absolute;
+  background: -webkit-gradient(linear, left top, left bottom, from(#162044), to(#0e193f));
+  background: linear-gradient(#162044, #0e193f);
+  width: 30rem;
+  height: 30rem;
+  opacity: 1;
+  top: 0;
+  border-top-left-radius: 61%;
+  border-bottom-right-radius: 100%;
+}
+/*# sourceMappingURL=styles.css.map */

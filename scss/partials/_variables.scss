@@ -1,0 +1,16 @@
+$font-family: "Raleway", sans-serif;
+
+//color map
+$colors: (
+  paleBlue: hsl(243, 100%, 93%),
+  grayishBlue: hsl(229, 7%, 55%),
+  darkBlue: hsl(228, 56%, 26%),
+  veryDarkBlue: hsl(229, 57%, 11%),
+  gradientFrom: hsl(6, 100%, 80%),
+  gradientTo: hsl(335, 100%, 65%),
+);
+
+//function to get color
+@function color($color) {
+  @return map-get($colors, $color);
+}
