@@ -1,0 +1,28 @@
+.fylo {
+  flex-basis: 33rem;
+  background-color: color(darkBlue);
+  padding: 4rem;
+  padding-right: 8.5rem;
+  border-radius: 1rem;
+  border-top-right-radius: 9rem;
+  margin: 0 3rem 0 0.8rem;
+
+  ul {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 2.7rem;
+    width: 18rem;
+    li {
+      background-color: color(veryDarkBlue);
+      padding: 1.3rem;
+      border-radius: 0.8rem;
+      width: 5rem;
+      height: 5rem;
+      display: flex;
+      img {
+        margin: auto;
+      }
+    }
+  }
+}

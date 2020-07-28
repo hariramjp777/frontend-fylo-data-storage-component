@@ -1,0 +1,100 @@
+.balance {
+  flex-basis: 55rem;
+  background-color: color(darkBlue);
+  padding: 5rem 4rem;
+  border-radius: 1rem;
+  position: relative;
+
+  .info {
+    color: color(paleBlue);
+    font-size: 1.4rem;
+    margin: -1rem 0 2rem;
+    font-weight: 400;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .range {
+    width: 100%;
+    height: 1.5rem;
+    background-color: color(grayishBlue);
+    border-radius: 0.8rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+    .used {
+      width: 75%;
+      height: 1.5rem;
+      border: 1px solid #000000;
+      background-color: red;
+      background-image: linear-gradient(
+        90deg,
+        color(gradientFrom),
+        color(gradientTo)
+      );
+      border-radius: inherit;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: #ffffff;
+        height: 1.2rem;
+        width: 1.2rem;
+        border-radius: 50%;
+        top: 50%;
+        transform: translate(0%, -55%);
+        right: 0.1rem;
+      }
+    }
+    &::after,
+    &::before {
+      position: absolute;
+      color: color(paleBlue);
+      font-size: 1.4rem;
+      font-weight: 700;
+      bottom: -2.7rem;
+    }
+
+    &::after {
+      content: "0 GB";
+      left: 0;
+    }
+    &::before {
+      content: "1000 GB";
+      right: 0;
+    }
+  }
+
+  .tooltip {
+    position: absolute;
+    font-size: 1.4rem;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    top: -3.3rem;
+    right: 4rem;
+    height: 6.5rem;
+    width: 13.5rem;
+    display: flex;
+    span {
+      margin: auto;
+      font-weight: 700;
+      &:first-child {
+        font-size: 3rem;
+      }
+      &:last-child {
+        color: color(grayishBlue);
+      }
+    }
+    &::after {
+      content: "";
+      width: 3rem;
+      height: 3rem;
+      background-color: #ffffff;
+      position: absolute;
+      bottom: -2rem;
+      right: 0;
+      clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+    }
+  }
+}

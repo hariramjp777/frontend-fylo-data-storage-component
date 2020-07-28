@@ -69,4 +69,208 @@ body {
   border-top-left-radius: 61%;
   border-bottom-right-radius: 100%;
 }
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 68%;
+}
+
+.fylo {
+  -ms-flex-preferred-size: 33rem;
+      flex-basis: 33rem;
+  background-color: #1d2c67;
+  padding: 4rem;
+  padding-right: 8.5rem;
+  border-radius: 1rem;
+  border-top-right-radius: 9rem;
+  margin: 0 3rem 0 0.8rem;
+}
+
+.fylo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2.7rem;
+  width: 18rem;
+}
+
+.fylo ul li {
+  background-color: #0c122c;
+  padding: 1.3rem;
+  border-radius: 0.8rem;
+  width: 5rem;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.fylo ul li img {
+  margin: auto;
+}
+
+.balance {
+  -ms-flex-preferred-size: 55rem;
+      flex-basis: 55rem;
+  background-color: #1d2c67;
+  padding: 5rem 4rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.balance .info {
+  color: #dddbff;
+  font-size: 1.4rem;
+  margin: -1rem 0 2rem;
+  font-weight: 400;
+}
+
+.balance .info span {
+  font-weight: 700;
+}
+
+.balance .range {
+  width: 100%;
+  height: 1.5rem;
+  background-color: #848794;
+  border-radius: 0.8rem;
+  position: relative;
+  margin-bottom: 0.8rem;
+}
+
+.balance .range .used {
+  width: 75%;
+  height: 1.5rem;
+  border: 1px solid #000000;
+  background-color: red;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffa399), to(#ff4d97));
+  background-image: linear-gradient(90deg, #ffa399, #ff4d97);
+  border-radius: inherit;
+  position: relative;
+}
+
+.balance .range .used::after {
+  content: "";
+  position: absolute;
+  background-color: #ffffff;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: 50%;
+  top: 50%;
+  -webkit-transform: translate(0%, -55%);
+          transform: translate(0%, -55%);
+  right: 0.1rem;
+}
+
+.balance .range::after, .balance .range::before {
+  position: absolute;
+  color: #dddbff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  bottom: -2.7rem;
+}
+
+.balance .range::after {
+  content: "0 GB";
+  left: 0;
+}
+
+.balance .range::before {
+  content: "1000 GB";
+  right: 0;
+}
+
+.balance .tooltip {
+  position: absolute;
+  font-size: 1.4rem;
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  top: -3.3rem;
+  right: 4rem;
+  height: 6.5rem;
+  width: 13.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.balance .tooltip span {
+  margin: auto;
+  font-weight: 700;
+}
+
+.balance .tooltip span:first-child {
+  font-size: 3rem;
+}
+
+.balance .tooltip span:last-child {
+  color: #848794;
+}
+
+.balance .tooltip::after {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -2rem;
+  right: 0;
+  -webkit-clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+          clip-path: polygon(100% 0%, 100% 100%, 0% 0%);
+}
+
+@media (max-width: 1050px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 60%;
+    width: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .fylo {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+  main .balance {
+    width: 90%;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+  main .balance .tooltip {
+    top: 12rem;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+  main .balance .tooltip::after {
+    display: none;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
