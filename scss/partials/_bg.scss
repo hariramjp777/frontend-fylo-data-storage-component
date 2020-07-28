@@ -12,6 +12,7 @@ body {
   background-size: cover;
   z-index: -1;
   background-repeat: no-repeat;
+  background-position: left 50% top 50%;
 
   &::after {
     content: "";
