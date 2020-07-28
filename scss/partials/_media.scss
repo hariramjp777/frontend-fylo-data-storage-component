@@ -1,3 +1,4 @@
+//Mobile breakpoint (main)
 @media (max-width: 1050px) {
   main {
     flex-direction: column;
@@ -5,17 +6,18 @@
     width: 100%;
     align-items: center;
 
+    .fylo,
+    .balance {
+      flex: 0 1 auto;
+      width: 33rem;
+    }
+
     .fylo {
-      width: 90%;
       margin-right: 0;
       margin-bottom: 2rem;
-      flex-basis: 0;
     }
 
     .balance {
-      width: 90%;
-      flex-basis: 0;
-
       .tooltip {
         top: 12rem;
         left: 50%;
@@ -26,5 +28,32 @@
         }
       }
     }
+  }
+  #bg {
+    background-image: url("../../assets/images/bg-mobile.svg");
+    height: 100%;
+    top: 0;
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+}
+
+//for very small devices
+
+@media (max-width: 374px) {
+  main .fylo,
+  main .balance {
+    width: 90%;
+  }
+}
+
+//Only for background
+@media (min-width: 2311px) {
+  #bg::before {
+    width: 61rem;
+    height: 61rem;
+    border-top-left-radius: 32%;
   }
 }

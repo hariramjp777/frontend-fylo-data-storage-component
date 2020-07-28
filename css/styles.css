@@ -251,17 +251,16 @@ main {
         -ms-flex-align: center;
             align-items: center;
   }
+  main .fylo,
+  main .balance {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+    width: 33rem;
+  }
   main .fylo {
-    width: 90%;
     margin-right: 0;
     margin-bottom: 2rem;
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
-  }
-  main .balance {
-    width: 90%;
-    -ms-flex-preferred-size: 0;
-        flex-basis: 0;
   }
   main .balance .tooltip {
     top: 12rem;
@@ -271,6 +270,29 @@ main {
   }
   main .balance .tooltip::after {
     display: none;
+  }
+  #bg {
+    background-image: url("../../assets/images/bg-mobile.svg");
+    height: 100%;
+    top: 0;
+  }
+  #bg::after, #bg::before {
+    display: none;
+  }
+}
+
+@media (max-width: 374px) {
+  main .fylo,
+  main .balance {
+    width: 90%;
+  }
+}
+
+@media (min-width: 2311px) {
+  #bg::before {
+    width: 61rem;
+    height: 61rem;
+    border-top-left-radius: 32%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
