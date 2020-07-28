@@ -39,7 +39,7 @@ body {
 
 #bg {
   position: fixed;
-  background-image: url("../../assets/images/bg-desktop.svg");
+  background-image: url("/assets/images/bg-desktop.svg");
   top: 50%;
   height: 50%;
   width: 100%;
@@ -279,7 +279,7 @@ main {
     display: none;
   }
   #bg {
-    background-image: url("../../assets/images/bg-mobile.svg");
+    background-image: url("/assets/images/bg-mobile.svg");
     height: 100%;
     top: 0;
   }
