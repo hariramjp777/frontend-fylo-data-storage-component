@@ -31,6 +31,10 @@ body ul {
 
 body {
   background-color: #0c122c;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 #bg {
