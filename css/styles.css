@@ -438,4 +438,10 @@ main {
     width: auto;
   }
 }
+
+@media (max-width: 1050px) and (max-height: 298px) {
+  .attribution {
+    display: none;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
