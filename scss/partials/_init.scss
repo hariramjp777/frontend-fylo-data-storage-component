@@ -1,0 +1,35 @@
+// resets
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  &::after,
+  &::before {
+    box-sizing: border-box;
+  }
+}
+
+//set height
+
+html,
+body {
+  height: 100%;
+}
+
+//set base font-size
+
+html {
+  font-size: 62.5%;
+  position: relative;
+}
+
+body {
+  width: 100%;
+  font-family: $font-family;
+
+  ul {
+    list-style-type: none;
+  }
+}
