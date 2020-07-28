@@ -1,0 +1,38 @@
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  text-align: center;
+  font-size: 1.3rem;
+  width: 100%;
+  a {
+    color: color(link);
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+    &:nth-child(1) {
+      border-right: 0.1rem solid;
+      padding-right: 1rem;
+    }
+    &:nth-child(2) {
+      padding-left: 1rem;
+    }
+  }
+}
+
+@media (max-width: 215px) {
+  .attribution a {
+    display: block;
+    border: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+  }
+}
+
+@media (max-height: 192px) {
+  .attribution {
+    right: 1rem;
+    transform: none;
+    width: auto;
+  }
+}
