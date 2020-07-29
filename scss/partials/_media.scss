@@ -100,10 +100,6 @@
 @media (max-width: 260px) {
   main {
     transform: translate(-50%, -50%) scale(0.7);
-    .fylo,
-    .balance {
-      width: 125%;
-    }
   }
 }
 
@@ -142,5 +138,30 @@
   main .balance .info {
     font-size: 1rem;
     transform: scale(1.2);
+  }
+}
+
+//attribution
+
+@media (max-width: 215px) {
+  .attribution a {
+    display: block;
+    border: 0 !important;
+    padding: 0 !important;
+    text-align: center;
+  }
+}
+
+@media (max-height: 192px) {
+  .attribution {
+    right: 1rem;
+    transform: none;
+    width: auto;
+  }
+}
+
+@media (max-width: 1050px) and (max-height: 298px) {
+  .attribution {
+    display: none;
   }
 }
