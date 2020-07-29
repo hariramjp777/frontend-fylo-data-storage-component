@@ -1,4 +1,4 @@
-# Front end mentor Challenge
+# Frontend Mentor Challenge
 
 ## Fylo Data Storage Component [:link:][link]
 
